@@ -1,5 +1,28 @@
 # ProofStudio
 
+## Judge quick start
+
+<!-- PROOFSTUDIO_JUDGE_QUICK_START -->
+ProofStudio turns AI-generated media into durable, reviewable evidence with
+provider lineage, Genblaze manifests, SHA-256 integrity records, and
+Backblaze B2 storage verification.
+
+- **Public application:** https://proofstudio-web.onrender.com
+- **Verified GMI to Backblaze B2 proof:** https://proofstudio-web.onrender.com/live-proof.html
+- **Interactive FastAPI documentation:** https://proofstudio.onrender.com/docs
+- **Demo video:** https://www.youtube.com/watch?v=awJsDzYsX-E
+
+### Verified live result
+
+The public proof records one successful GMI Cloud request using Seedream 5.0
+Lite, one original 4096 x 2304 PNG, zero continuation generation posts, and
+five evidence objects written to and immediately read back from Backblaze B2.
+
+The evidence boundary is explicit: hashes verify recorded bytes. ProofStudio
+does not claim semantic truth, legal authenticity, human authorship, C2PA
+certification, or globally atomic create-if-absent storage.
+<!-- /PROOFSTUDIO_JUDGE_QUICK_START -->
+
 <!-- PS-018B_CURRENT_PUBLIC_DEPLOYMENT_START -->
 ## Current public deployment status — PS-018B
 
@@ -43,7 +66,7 @@ Brief → Genblaze pipeline → generated media → B2 storage → Provenance Pa
 ## Repo structure
 
     specs/      Product, architecture, storage, pipeline, and acceptance specs
-    apps/web/   Next.js frontend
+    apps/web/   React + TypeScript + Vite frontend
     apps/api/   FastAPI backend
     workers/    Background worker for Genblaze jobs
     packages/   Shared schemas/types if needed
@@ -52,9 +75,27 @@ Brief → Genblaze pipeline → generated media → B2 storage → Provenance Pa
 
 ## Current phase
 
-Sprint 0: proof-of-stack.
+Public hackathon submission snapshot. The deployed application, verified GMI
+generation proof, Backblaze B2 evidence, typed API, public source snapshot, and
+demo video are live.
 
-First engineering target: PS-001 — Genblaze + Backblaze B2 smoke run.
+## Local quick start
+
+Prerequisites: Python, Node.js, npm, and Git.
+
+    git clone https://github.com/GeorgeElArif/proofstudio-hackathon.git
+    cd proofstudio-hackathon
+    python -m pip install -r apps/api/requirements.txt
+    cd apps/web
+    npm ci
+    npm run build
+    cd ../..
+    python scripts/ps015_one_click_local_demo.py
+
+Environment templates are provided in `.env.example` and
+`.env.production.example`. External-provider and Backblaze credentials are not
+committed. Live generation and storage operations remain explicit,
+credential-dependent actions.
 
 ## Submission pack
 
