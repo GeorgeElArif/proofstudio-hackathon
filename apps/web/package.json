@@ -1,0 +1,37 @@
+{
+  "name": "proofstudio-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "ProofStudio Demo UI Shell / Review Room (PS-013). A judge-facing frontend over the PS-012 FastAPI demo contract.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "smoke:auth-client": "node scripts/smoke-auth-client.mjs",
+    "smoke:configured-auth-client": "node scripts/smoke-configured-auth-runtime.mjs",
+    "smoke:dashboard-contract": "node scripts/smoke-dashboard-contract.mjs",
+    "smoke:dashboard-ui": "node scripts/smoke-dashboard-ui.mjs",
+    "smoke:dashboard-account-campaigns": "node scripts/smoke-dashboard-account-campaigns.mjs",
+    "smoke:private-proof-access": "node scripts/smoke-private-proof-access.mjs",
+    "smoke:lineage-ui": "node scripts/smoke-lineage-ui.mjs",
+    "smoke:lineage-ui-runtime": "node scripts/smoke-lineage-ui-runtime.mjs",
+    "smoke:production-auth-gateway": "node scripts/smoke-production-auth-gateway.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "gsap": "^3.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

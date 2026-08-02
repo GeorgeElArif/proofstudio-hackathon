@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta
+    name="description"
+    content="ProofStudio verified GMI Cloud generation, Backblaze B2 storage, and Genblaze manifest evidence."
+  >
+  <title>Verified GMI → B2 Proof · ProofStudio</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #070b14;
+      --surface: rgba(18, 26, 43, .88);
+      --surface-2: #121a2b;
+      --line: rgba(144, 176, 255, .2);
+      --text: #eef3ff;
+      --muted: #9ba9c7;
+      --accent: #7da2ff;
+      --good: #6ee7b7;
+      --warn: #fbbf24;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(63, 94, 251, .18), transparent 35rem),
+        radial-gradient(circle at 90% 12%, rgba(110, 231, 183, .12), transparent 32rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: #9ab5ff; }
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+    .eyebrow {
+      color: var(--good);
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      font-size: .78rem;
+    }
+    h1 {
+      margin: 12px 0;
+      font-size: clamp(2.2rem, 7vw, 5.3rem);
+      line-height: .98;
+      max-width: 980px;
+    }
+    .lede {
+      color: var(--muted);
+      max-width: 780px;
+      font-size: 1.12rem;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 18px;
+      padding: 9px 14px;
+      border: 1px solid rgba(110, 231, 183, .35);
+      border-radius: 999px;
+      color: var(--good);
+      background: rgba(110, 231, 183, .08);
+      font-weight: 800;
+    }
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--good);
+      box-shadow: 0 0 20px var(--good);
+    }
+    .hero-image {
+      width: 100%;
+      margin: 36px 0;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, .4);
+      background: #000;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+    .card {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      backdrop-filter: blur(18px);
+    }
+    .label {
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 700;
+    }
+    .value {
+      margin-top: 8px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+    section {
+      margin-top: 54px;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.45rem);
+      margin-bottom: 10px;
+    }
+    code {
+      overflow-wrap: anywhere;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: .82rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 15px;
+      background: var(--surface);
+    }
+    th, td {
+      padding: 13px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+    .truth {
+      border-left: 4px solid var(--warn);
+      background: rgba(251, 191, 36, .07);
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 11px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .home-control {
+      align-items: center;
+      backdrop-filter: blur(16px);
+      background: rgba(7, 12, 22, .92);
+      border: 1px solid rgba(125, 162, 255, .38);
+      border-radius: 999px;
+      bottom: 18px;
+      box-shadow: 0 16px 42px rgba(0, 0, 0, .42);
+      color: var(--text);
+      display: inline-flex;
+      font-size: .84rem;
+      font-weight: 800;
+      gap: 8px;
+      min-height: 42px;
+      padding: 0 15px;
+      position: fixed;
+      right: 18px;
+      text-decoration: none;
+      transition: transform .14s ease, border-color .14s ease;
+      z-index: 1000;
+    }
+    .home-control:hover {
+      border-color: rgba(110, 231, 183, .72);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .home-control:focus-visible {
+      outline: 3px solid var(--good);
+      outline-offset: 3px;
+    }
+    footer {
+      color: var(--muted);
+      margin-top: 60px;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+    @media (max-width: 850px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      table { display: block; overflow-x: auto; }
+    }
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: 1fr; }
+      main { width: min(100% - 20px, 1180px); padding-top: 28px; }
+      .home-control {
+        bottom: 12px;
+        font-size: .76rem;
+        min-height: 40px;
+        padding: 0 13px;
+        right: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+<a
+  class="home-control"
+  href="/"
+  aria-label="Back to ProofStudio home"
+>← Back to ProofStudio</a>
+<main>
+  <header>
+    <div class="eyebrow">ProofStudio · Live proof record</div>
+    <h1>Verified GMI generation, stored and checked in Backblaze B2.</h1>
+    <p class="lede">
+      This page presents the exact output and evidence from one successful
+      GMI Cloud image-generation request, followed by an exact five-object
+      Backblaze B2 write and byte-for-byte verification boundary.
+    </p>
+    <div class="status">
+      <span class="dot"></span>
+      succeeded · complete
+    </div>
+  </header>
+
+  <img
+    class="hero-image"
+    src="/live-proof/proofstudio-launch-image.png"
+    alt="Exact verified image generated by the recorded GMI Cloud request"
+  >
+
+  <div class="grid">
+    <div class="card">
+      <div class="label">Provider</div>
+      <div class="value">gmicloud-image</div>
+    </div>
+    <div class="card">
+      <div class="label">Model</div>
+      <div class="value">seedream-5.0-lite</div>
+    </div>
+    <div class="card">
+      <div class="label">Image</div>
+      <div class="value">4096x2304 PNG</div>
+    </div>
+    <div class="card">
+      <div class="label">Manifest</div>
+      <div class="value">Verified</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Generation lineage</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="label">Proof ID</div>
+        <div class="value"><code>c252577563896fa8866963d3a3f95650</code></div>
+      </div>
+      <div class="card">
+        <div class="label">Provider request</div>
+        <div class="value"><code>439b863f-d0e4-48d8-adfd-1e7912ac0534</code></div>
+      </div>
+      <div class="card">
+        <div class="label">Total provider POSTs</div>
+        <div class="value">1</div>
+      </div>
+      <div class="card">
+        <div class="label">Continuation POSTs</div>
+        <div class="value">0</div>
+      </div>
+    </div>
+    <p>
+      The successful provider request was reused during continuation.
+      No second image-generation request was created.
+    </p>
+  </section>
+
+  <section>
+    <h2>Byte integrity</h2>
+    <div class="card">
+      <div class="label">Image SHA-256</div>
+      <div class="value"><code>715d1c5e5148a7c8c24371acf8efd21c8b9994b51ec0fc553d7deee0994ced67</code></div>
+      <br>
+      <div class="label">Manifest file SHA-256</div>
+      <div class="value"><code>2c3b331f6e130b850af901717145b616239383b094f38fd9a4be1aa42e693a6f</code></div>
+      <br>
+      <div class="label">Manifest canonical hash</div>
+      <div class="value"><code>0199cad37f883a1aad8b3a98340aad507ff589642fb42cb17b9ce2bfc9e886e5</code></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Stored evidence</h2>
+    <p>
+      Five exact objects were written to Backblaze B2. Every successful write
+      was followed immediately by a complete GET and byte-for-byte comparison.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Artifact</th>
+          <th>Type</th>
+          <th>Bytes</th>
+          <th>SHA-256</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td><a href="/live-proof/brief.json">brief.json</a></td>
+          <td>application/json</td>
+          <td>757</td>
+          <td><code>7b6d273f69a70a7a64d3af611ddd7379563132d93d72cc7b73af23b5fd684062</code></td>
+        </tr>
+        
+        <tr>
+          <td><a href="/live-proof/genblaze-manifest.json">genblaze-manifest.json</a></td>
+          <td>application/json</td>
+          <td>2395</td>
+          <td><code>2c3b331f6e130b850af901717145b616239383b094f38fd9a4be1aa42e693a6f</code></td>
+        </tr>
+        
+        <tr>
+          <td><a href="/live-proof/proofstudio-launch-image.png">proofstudio-launch-image.png</a></td>
+          <td>image/png</td>
+          <td>7494910</td>
+          <td><code>715d1c5e5148a7c8c24371acf8efd21c8b9994b51ec0fc553d7deee0994ced67</code></td>
+        </tr>
+        
+        <tr>
+          <td><a href="/live-proof/run-bundle.json">run-bundle.json</a></td>
+          <td>application/json</td>
+          <td>4819</td>
+          <td><code>e076e49c6d83e66791ec5a28fd55e591b46ab8d7932a375a4cf1fbdc28c32db9</code></td>
+        </tr>
+        
+        <tr>
+          <td><a href="/live-proof/verification-receipt.json">verification-receipt.json</a></td>
+          <td>application/json</td>
+          <td>2974</td>
+          <td><code>0d4884567afc1bc73fcd0efb4255ff236a5354e77b29944ae4bb37ab0904b6ef</code></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Execution counters</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="label">Generation POSTs</div>
+        <div class="value">0</div>
+      </div>
+      <div class="card">
+        <div class="label">B2 preflight HEADs</div>
+        <div class="value">5</div>
+      </div>
+      <div class="card">
+        <div class="label">B2 PUTs</div>
+        <div class="value">5</div>
+      </div>
+      <div class="card">
+        <div class="label">Verification GETs</div>
+        <div class="value">5</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Storage truth boundary</h2>
+    <div class="card truth">
+      <p>
+        The write mode was
+        <strong>plain-put-after-exact-absence-preflight</strong>.
+      </p>
+      <p>
+        Exact-key absence preflight:
+        <strong>True</strong>.
+        Local single-writer enforcement:
+        <strong>True</strong>.
+        Post-write byte verification:
+        <strong>True</strong>.
+      </p>
+      <p>
+        Atomic create-if-absent:
+        <strong>False</strong>.
+        ProofStudio does not describe this B2 write as globally race-free,
+        atomic, or overwrite-proof.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Evidence downloads</h2>
+    <div class="links">
+      <a class="button" href="/live-proof/public-proof-summary.json">Public summary</a>
+      <a class="button" href="/live-proof/verification-receipt.json">Verification receipt</a>
+      <a class="button" href="/live-proof/genblaze-manifest.json">Genblaze manifest</a>
+      <a class="button" href="/live-proof/run-bundle.json">Run bundle</a>
+      <a class="button" href="/live-proof/brief.json">Source brief</a>
+      <a class="button" href="/live-proof/proofstudio-launch-image.png">Original PNG</a>
+      <a class="button" href="/">Open ProofStudio</a>
+    </div>
+  </section>
+
+  <footer>
+    ProofStudio proves what the recorded pipeline and stored bytes show.
+    Proof does not equal semantic truth, legal authenticity, human authorship,
+    or C2PA certification.
+  </footer>
+</main>
+</body>
+</html>

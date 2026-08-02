@@ -1,0 +1,29 @@
+{
+  "fixture_id": "ps035a-genblaze-manifest-fixture",
+  "slice_id": "ps035a",
+  "source_scope": "checked-in-local-fixture",
+  "run_id": "run_89d967f9000045efa22ed4cc78cfa67f",
+  "campaign_id": "camp_bea5161faa6244079d2ee01ce445c259",
+  "archive_sha256": "a6ade0a678847bd0e7a6a258c93e815af3194da264a35e19a75e2ccae84a7141",
+  "selected_package_path": "published-version-fallback",
+  "target_version_requested": "0.4.0",
+  "target_version_available": false,
+  "version_fallback_used": true,
+  "pinned_genblaze_versions": {
+    "genblaze-core": "0.3.4",
+    "genblaze-s3": "0.3.4",
+    "genblaze-gmicloud": "0.3.2"
+  },
+  "installed_genblaze_versions": {
+    "genblaze-core": "0.3.4",
+    "genblaze-s3": "0.3.4",
+    "genblaze-gmicloud": "0.3.2"
+  },
+  "manifest_uri": "docs/evidence/ps-035a/manifest-fixture.json",
+  "manifest_storage_note": "This manifest URI is a checked-in local repo-relative fixture path, not a live B2 URL. No live B2 upload, no live B2 manifest storage, and no live Genblaze run occurred to produce this fixture by default.",
+  "no_live_b2_upload_by_default": true,
+  "no_live_provider_call": true,
+  "no_broad_b2_read": true,
+  "provenance_note": "The fixture is hand-authored and deterministic. It records the canonical golden-run identity (run id, campaign id, archive SHA-256) plus the exact published Genblaze package pins actually installed and used. The canonical golden-run manifest_hash is the independent SHA-256 recomputed over the exact bytes of this checked-in fixture file.",
+  "truth_boundary": "ProofStudio proves what the pipeline did. It does not prove semantic truth, legal authenticity, C2PA authenticity, or human authorship. A checked-in manifest fixture proves reproducible local manifest-hash correctness, not live B2 Object Lock, not tamper-proof storage, and not semantic truth."
+}

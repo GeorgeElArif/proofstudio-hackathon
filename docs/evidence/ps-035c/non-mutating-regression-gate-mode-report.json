@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "slice_id": "ps035c",
+  "checked_at": "2026-07-01T21:19:01.730143+00:00",
+  "non_mutating_gate": true,
+  "write_mode_check_only_supported": true,
+  "write_mode_report_out_supported": true,
+  "write_mode_write_report_supported": true,
+  "default_is_check_only_for_non_ps034a": true,
+  "check_only_leaves_git_clean": true,
+  "check_only_leaves_ps034a_digest_unchanged": true,
+  "report_out_writes_only_to_requested_path": true,
+  "report_out_does_not_dirty_tracked_evidence": true,
+  "write_report_required_for_canonical_ps034a_report": true,
+  "write_report_rejected_for_non_ps034a": true,
+  "conflicting_flags_rejected_before_write": true,
+  "current_flag_supported": true,
+  "frontend_flag_supported": true,
+  "no_frontend_flag_supported": true,
+  "no_provider_calls": true,
+  "no_b2_reads": true,
+  "no_b2_writes": true,
+  "no_hidden_git_flags": true,
+  "frontend_not_run_unless_requested": true,
+  "truth_boundary_preserved": true,
+  "no_forbidden_overclaims": true,
+  "no_forbidden_file_changes": true,
+  "ps034a_report_digest": {
+    "baseline_sha256": "56e795b008b1e5c4d268b9938f09be0cb6309f40f7839c7cec470aadeab657c5",
+    "final_sha256": "56e795b008b1e5c4d268b9938f09be0cb6309f40f7839c7cec470aadeab657c5",
+    "canonical_path": "docs/evidence/ps-034a/smoke-harness-v1-report.json"
+  },
+  "truth_boundary": "ProofStudio proves what the pipeline did. PS-035C fixes validation mutation only: the central regression gate, in non-mutating mode, no longer overwrites tracked historical PS-034A evidence as a side effect of validating a later slice. PS-035C does not prove product correctness, production security, B2 immutability, tamper-proof storage, real billing API integration, billing behavior, semantic truth, legal authenticity, C2PA authenticity, human authorship, or browser-side B2 byte verification.",
+  "non_claims": {
+    "not_product_correctness": true,
+    "not_production_security": true,
+    "not_b2_immutability": true,
+    "not_tamper_proof": true,
+    "not_real_billing_api_integration": true,
+    "not_billing_behavior": true
+  },
+  "failures": []
+}

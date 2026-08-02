@@ -1,0 +1,45 @@
+{
+  "demo_id": "golden-demo-run-ps-024",
+  "source_slice": "PS-021",
+  "run_id": "run_89d967f9000045efa22ed4cc78cfa67f",
+  "campaign_id": "camp_bea5161faa6244079d2ee01ce445c259",
+  "public_app_url": "https://proofstudio-web.onrender.com",
+  "public_api_url": "https://proofstudio.onrender.com",
+  "public_passport_url": null,
+  "archive_uri": "https://s3.eu-central-003.backblazeb2.com/proofstudio-project-assets/proofstudio/ps-021/assets/a6/ad/a6ade0a678847bd0e7a6a258c93e815af3194da264a35e19a75e2ccae84a7141.json",
+  "archive_sha256": "a6ade0a678847bd0e7a6a258c93e815af3194da264a35e19a75e2ccae84a7141",
+  "manifest_uri": "docs/evidence/ps-035a/manifest-fixture.json",
+  "manifest_hash": "438fabca46481a232373067eedb6d0e3a684c8ed513410dfe2047e3b4950022f",
+  "manifest_sha256": "438fabca46481a232373067eedb6d0e3a684c8ed513410dfe2047e3b4950022f",
+  "manifest_source_scope": "checked-in-local-fixture",
+  "manifest_provenance_note": "PS-035a manifest correctness with exact published pins. The manifest URI is a checked-in local repo-relative fixture path, not a live B2 URL. No live B2 upload, no live B2 manifest storage, and no live Genblaze run occurred to produce this fixture by default. The manifest_hash is the independent SHA-256 recomputed over the exact bytes of docs/evidence/ps-035a/manifest-fixture.json.",
+  "genblaze_versions": {
+    "genblaze-core": "0.3.4",
+    "genblaze-s3": "0.3.4",
+    "genblaze-gmicloud": "0.3.2"
+  },
+  "proof_score": null,
+  "rehydrate_source": "b2_rehydrated",
+  "provider_calls_during_rehydrate": 0,
+  "no_live_provider_call_during_rehydrate": true,
+  "truth_boundary": "ProofStudio proves what this pipeline did. It does not prove semantic truth, legal authenticity, C2PA authenticity, or human authorship.",
+  "evidence_files": [
+    "docs/evidence/ps-021/live-b2-durable-rehydrate-smoke.json",
+    "docs/evidence/ps-019/live-public-passport-smoke-summary.json",
+    "docs/evidence/ps-019/local-passport-smoke-summary.json",
+    "docs/evidence/ps-020/durable-passport-foundation-smoke.json",
+    "docs/ps-021-live-b2-durable-rehydrate-proof.md",
+    "docs/ps-019-public-passport-proof-score-proof.md",
+    "docs/ps-020-durable-passport-b2-rehydrate-proof.md"
+  ],
+  "unavailable_fields": {
+    "public_passport_url": {
+      "value": null,
+      "reason": "Passport pinning is honestly blocked. The PS-021 verified run (run_89d967f9000045efa22ed4cc78cfa67f) was created during a local smoke test and is not present in the public backend's in-memory store. The public deployment's durable read gates (PROOFSTUDIO_DURABLE_PASSPORT_READ_ENABLED and PROOFSTUDIO_DURABLE_PASSPORT_B2_READ_ENABLED) both default to false, so GET /runs/<run_id>/passport returns 404 for this run on the public API. No run_id or passport URL is invented."
+    },
+    "proof_score": {
+      "value": null,
+      "reason": "Proof Score is a deterministic UI-local computation over a live passport API response (PS-019). No pinned passport response is fetchable on the public deployment, so no pinned score is recorded. Inventing a score would violate the non-negotiable rule."
+    }
+  }
+}

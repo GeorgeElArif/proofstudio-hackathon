@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "api_base": "https://proofstudio.onrender.com",
+  "web_base": "https://proofstudio-web.onrender.com",
+  "campaign_status_code": 201,
+  "run_status_code": 201,
+  "passport_status_code": 200,
+  "cors_preflight_status_code": 200,
+  "web_passport_status_code": 200,
+  "bundle_status_code": 200,
+  "campaign_id": "camp_70565f38be964139990860e4ee8db206",
+  "run_id": "run_b852f08667bf4178b931d8466be1b2c8",
+  "public_passport_url": "https://proofstudio-web.onrender.com/passport/run_b852f08667bf4178b931d8466be1b2c8",
+  "safe_dry_run": true,
+  "provider_call": false,
+  "b2_write": false,
+  "live_public_passport_verified": true
+}

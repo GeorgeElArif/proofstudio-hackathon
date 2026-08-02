@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "run_id": "run_f085ee18af444f27b019a3666cbe9c55",
+  "campaign_id": "camp_579b3fc3d444446caa00faf0ea4f6f14",
+  "index_path": "/tmp/proofstudio-ps-020-durable-index/run_f085ee18af444f27b019a3666cbe9c55.json",
+  "missing_without_gate": true,
+  "durable_read_enabled_default": false,
+  "durable_b2_read_enabled_default": false,
+  "api_rehydrate_status_code": 200,
+  "durable_source": "local_rehydrated",
+  "rehydrate_completed": true,
+  "no_live_provider_call_during_rehydrate": true,
+  "provider_call": false,
+  "b2_read": false,
+  "b2_write": false
+}

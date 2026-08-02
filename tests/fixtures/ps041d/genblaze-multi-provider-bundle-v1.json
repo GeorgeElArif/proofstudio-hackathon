@@ -1,0 +1,114 @@
+{
+  "bundle_schema": "proofstudio.genblaze_bundle.v1",
+  "source_type": "genblaze_multi_provider_sample",
+  "source_slug": "genblaze-gen-media-multi-provider-sample",
+  "source_revision": "2e31577b7a9d5a7b0309d814f2d0282088b33fe8",
+  "positional_scene_convention": true,
+  "partial_bundle": true,
+  "objects": [
+    {
+      "role": "stage_a_storyboard",
+      "source_id": "storyboard-sanitized-001",
+      "inline_json": {
+        "title": "Sanitized contract storyboard",
+        "style_prompt": "Generic geometric study",
+        "music_prompt": "Neutral instrumental bed",
+        "total_duration_sec": 20,
+        "scenes": [
+          {"image_prompt": "Generic blue shape", "motion_prompt": "Slow movement", "narration": "A generic scene.", "caption": "Scene one", "duration_sec": 10},
+          {"image_prompt": "Generic green shape", "motion_prompt": "Gentle movement", "narration": "Another generic scene.", "caption": "Scene two", "duration_sec": 10}
+        ],
+        "fixture_notice": "Pinned-contract-derived sanitized fixture; not an observed production run."
+      }
+    },
+    {
+      "role": "stage_b0_manifest",
+      "source_id": "manifest-b0-sanitized-001",
+      "inline_json": {
+        "schema_version": "1.5",
+        "canonical_hash": "24387e919532dc6094fe9c2ac90e629d3649c4b2c64cdf1380a3e680f84010ba",
+        "run": {
+          "run_id": "b0-run-sanitized-001",
+          "name": "Reference image",
+          "status": "completed",
+          "parent_run_id": null,
+          "created_at": "2026-01-01T00:00:00Z",
+          "steps": [{
+            "step_id": "b0-step-001", "run_id": "b0-run-sanitized-001", "provider": "unknown-image-vendor",
+            "model": "neutral-image-model", "modality": "image", "status": "succeeded", "step_index": 0,
+            "prompt": "Sanitized generic reference", "inputs": [],
+            "assets": [{"asset_id": "asset-reference-001", "url": "b2://configured-alias/import-root/reference.png", "media_type": "image/png", "sha256": "1111111111111111111111111111111111111111111111111111111111111111", "size_bytes": 128, "metadata": {}}]
+          }]
+        },
+        "transfer_failures": []
+      }
+    },
+    {
+      "role": "stage_b1_manifest",
+      "source_id": "manifest-b1-sanitized-001",
+      "inline_json": {
+        "schema_version": "1.5",
+        "canonical_hash": "11f0f780e4c71f0d0ac0733facd49a4fbe0c79a090803d2900c54b6fcc6ac4e2",
+        "run": {
+          "run_id": "b1-run-sanitized-001",
+          "name": "Scene keyframes",
+          "status": "completed",
+          "parent_run_id": "b0-run-sanitized-001",
+          "created_at": "2026-01-01T00:01:00Z",
+          "steps": [
+            {"step_id": "b1-step-001", "run_id": "b1-run-sanitized-001", "provider": "unknown-image-vendor", "model": "neutral-image-model", "modality": "image", "status": "succeeded", "step_index": 0, "prompt": "Sanitized scene one", "inputs": [], "assets": [{"asset_id": "asset-keyframe-001", "url": "b2://configured-alias/import-root/keyframe-1.png", "media_type": "image/png", "sha256": "2222222222222222222222222222222222222222222222222222222222222222", "size_bytes": 256, "metadata": {}}]},
+            {"step_id": "b1-step-002", "run_id": "b1-run-sanitized-001", "provider": "another-unknown-vendor", "model": "neutral-image-model-v2", "modality": "image", "status": "succeeded", "step_index": 1, "prompt": "Sanitized scene two", "inputs": [], "assets": [{"asset_id": "asset-keyframe-002", "url": "b2://configured-alias/import-root/keyframe-2.png", "media_type": "image/png", "sha256": "3333333333333333333333333333333333333333333333333333333333333333", "size_bytes": 256, "metadata": {}}]}
+          ]
+        },
+        "transfer_failures": []
+      }
+    },
+    {
+      "role": "stage_b2_manifest",
+      "source_id": "manifest-b2-sanitized-001",
+      "inline_json": {
+        "schema_version": "1.5",
+        "canonical_hash": "78b0176cc7f2a10a0bfdbe8760ee9d354a36a6590a65f29e684edeb83ae150e0",
+        "run": {
+          "run_id": "b2-run-sanitized-001",
+          "name": "Scene media",
+          "status": "completed",
+          "parent_run_id": "b1-run-sanitized-001",
+          "created_at": "2026-01-01T00:02:00Z",
+          "steps": [
+            {"step_id": "b2-video-001", "run_id": "b2-run-sanitized-001", "provider": "unknown-video-vendor", "model": "neutral-video-model", "modality": "video", "status": "succeeded", "step_index": 0, "prompt": "Sanitized motion one", "inputs": [{"asset_id": "external-keyframe-001", "url": "b2://configured-alias/import-root/keyframe-1.png", "media_type": "image/png", "metadata": {}}], "assets": [{"asset_id": "asset-video-001", "url": "b2://configured-alias/import-root/video-1.mp4", "media_type": "video/mp4", "sha256": "4444444444444444444444444444444444444444444444444444444444444444", "size_bytes": 512, "metadata": {}}]},
+            {"step_id": "b2-tts-001", "run_id": "b2-run-sanitized-001", "provider": "unknown-audio-vendor", "model": "neutral-voice-model", "modality": "audio", "status": "succeeded", "step_index": 1, "prompt": "Sanitized narration", "inputs": [], "assets": [{"asset_id": "asset-audio-001", "url": "b2://configured-alias/import-root/audio-1.wav", "media_type": "audio/wav", "sha256": "5555555555555555555555555555555555555555555555555555555555555555", "size_bytes": 128, "metadata": {}}]},
+            {"step_id": "b2-music-001", "run_id": "b2-run-sanitized-001", "provider": "unknown-music-vendor", "model": "neutral-music-model", "modality": "audio", "status": "failed", "step_index": 2, "prompt": "Sanitized instrumental", "inputs": [], "assets": []}
+          ]
+        },
+        "transfer_failures": []
+      }
+    },
+    {
+      "role": "stage_c_composition",
+      "source_id": "composition-sanitized-001",
+      "inline_json": {"status": "recorded", "title": "External ffmpeg composition", "fixture_notice": "Workflow record only; not a quality guarantee."}
+    },
+    {
+      "role": "final_delivery",
+      "source_id": "final-sanitized-001",
+      "b2_reference": {"backend": "b2_s3", "bucket_alias": "configured-import", "object_key": "import-root/explainers/b2-run-sanitized-001/final.mp4", "version_id": null, "size_bytes": 1024, "content_type": "video/mp4", "etag": "opaque-etag-not-a-sha", "sha256": "6666666666666666666666666666666666666666666666666666666666666666", "source_prefix": "import-root", "manifest_hash": null}
+    },
+    {
+      "role": "embedded_manifest",
+      "source_id": "embedded-manifest-missing-001",
+      "missing": true,
+      "limitation": "Best-effort embedded B2 Manifest was not extracted, so its presence is not checked."
+    }
+  ],
+  "relationships": [
+    {"kind": "parent_run", "source_id": "b1-run-sanitized-001", "target_id": "b0-run-sanitized-001", "evidence_class": "recorded", "source_locator": "manifest.run.parent_run_id", "limitation": "Manifest 1.5 excludes parent_run_id from canonical hashing.", "hash_covered": false},
+    {"kind": "parent_run", "source_id": "b2-run-sanitized-001", "target_id": "b1-run-sanitized-001", "evidence_class": "recorded", "source_locator": "manifest.run.parent_run_id", "limitation": "Manifest 1.5 excludes parent_run_id from canonical hashing.", "hash_covered": false},
+    {"kind": "storyboard_for", "source_id": "storyboard-sanitized-001", "target_id": "b0-run-sanitized-001", "evidence_class": "inferred", "source_locator": "bundle.positional_scene_convention", "limitation": "Stage A has no durable recorded link to B0.", "hash_covered": false},
+    {"kind": "scene_member", "source_id": "storyboard-sanitized-001", "target_id": "b1-run-sanitized-001", "evidence_class": "inferred", "source_locator": "storyboard.scenes index equals B1 step index", "limitation": "Scene association is positional.", "hash_covered": false},
+    {"kind": "scene_member", "source_id": "asset-keyframe-001", "target_id": "b2-run-sanitized-001", "evidence_class": "inferred", "source_locator": "sample B2 ordered-step convention", "limitation": "Scene grouping is positional.", "hash_covered": false},
+    {"kind": "composition_input", "source_id": "b2-run-sanitized-001", "target_id": "composition-sanitized-001", "evidence_class": "recorded", "source_locator": "bundle composition record", "hash_covered": false},
+    {"kind": "composed_output", "source_id": "composition-sanitized-001", "target_id": "final-sanitized-001", "evidence_class": "recorded", "source_locator": "bundle final delivery record", "hash_covered": false},
+    {"kind": "embedded_manifest", "source_id": "final-sanitized-001", "target_id": "embedded-manifest-missing-001", "evidence_class": "recorded", "source_locator": "bundle missing observation", "limitation": "Presence was not checked.", "hash_covered": false}
+  ]
+}

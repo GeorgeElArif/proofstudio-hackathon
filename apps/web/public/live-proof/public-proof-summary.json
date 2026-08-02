@@ -1,0 +1,78 @@
+{
+  "combined_proof_lineage": {
+    "original_provider_posts": 1,
+    "original_submit_revision": "d19d1188a3f3c4c925b85859daf9f0d6153abf12",
+    "proof_id": "c252577563896fa8866963d3a3f95650",
+    "resume_provider_posts": 0,
+    "total_provider_posts": 1
+  },
+  "completeness_status": "complete",
+  "continuation_counters": {
+    "asset_download_gets": 1,
+    "b2_gets": 5,
+    "b2_heads": 5,
+    "b2_puts": 5,
+    "fallbacks": 0,
+    "generation_posts": 0,
+    "other_network_methods": 0,
+    "retries": 0,
+    "status_poll_gets": 1
+  },
+  "files": {
+    "brief.json": {
+      "content_type": "application/json",
+      "object_key": "proofstudio/submission/genblaze-live-proof-v1/c252577563896fa8866963d3a3f95650/source/brief.json",
+      "sha256": "7b6d273f69a70a7a64d3af611ddd7379563132d93d72cc7b73af23b5fd684062",
+      "size_bytes": 757
+    },
+    "genblaze-manifest.json": {
+      "content_type": "application/json",
+      "object_key": "proofstudio/submission/genblaze-live-proof-v1/c252577563896fa8866963d3a3f95650/manifest/genblaze-manifest.json",
+      "sha256": "2c3b331f6e130b850af901717145b616239383b094f38fd9a4be1aa42e693a6f",
+      "size_bytes": 2395
+    },
+    "proofstudio-launch-image.png": {
+      "content_type": "image/png",
+      "object_key": "proofstudio/submission/genblaze-live-proof-v1/c252577563896fa8866963d3a3f95650/media/proofstudio-launch-image.png",
+      "sha256": "715d1c5e5148a7c8c24371acf8efd21c8b9994b51ec0fc553d7deee0994ced67",
+      "size_bytes": 7494910
+    },
+    "run-bundle.json": {
+      "content_type": "application/json",
+      "object_key": "proofstudio/submission/genblaze-live-proof-v1/c252577563896fa8866963d3a3f95650/archive/run-bundle.json",
+      "sha256": "e076e49c6d83e66791ec5a28fd55e591b46ab8d7932a375a4cf1fbdc28c32db9",
+      "size_bytes": 4819
+    },
+    "verification-receipt.json": {
+      "content_type": "application/json",
+      "object_key": "proofstudio/submission/genblaze-live-proof-v1/c252577563896fa8866963d3a3f95650/receipt/verification-receipt.json",
+      "sha256": "0d4884567afc1bc73fcd0efb4255ff236a5354e77b29944ae4bb37ab0904b6ef",
+      "size_bytes": 2974
+    }
+  },
+  "image_dimensions": "4096x2304",
+  "image_media_type": "image/png",
+  "image_sha256": "715d1c5e5148a7c8c24371acf8efd21c8b9994b51ec0fc553d7deee0994ced67",
+  "image_size_bytes": 7494910,
+  "manifest_canonical_hash": "0199cad37f883a1aad8b3a98340aad507ff589642fb42cb17b9ce2bfc9e886e5",
+  "manifest_file_sha256": "2c3b331f6e130b850af901717145b616239383b094f38fd9a4be1aa42e693a6f",
+  "manifest_verification": true,
+  "model": "seedream-5.0-lite",
+  "proof_id": "c252577563896fa8866963d3a3f95650",
+  "provider": "gmicloud-image",
+  "provider_request_id": "439b863f-d0e4-48d8-adfd-1e7912ac0534",
+  "source_objects_parsed": {
+    "archive": true,
+    "brief": true,
+    "manifest": true,
+    "receipt": true
+  },
+  "status": "succeeded",
+  "storage_truth_boundary": {
+    "atomic_create_if_absent": false,
+    "b2_write_mode": "plain-put-after-exact-absence-preflight",
+    "exact_key_preflight": true,
+    "local_single_writer_enforced": true,
+    "postwrite_byte_verification": true
+  }
+}

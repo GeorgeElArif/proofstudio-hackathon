@@ -1,0 +1,240 @@
+{
+  "ok": true,
+  "slice_id": "ps034b",
+  "retrofit_scope": "Retrofit historical smoke scripts PS-023 through PS-034 for safe local / check-only mode without recursion, nested frontend builds, Git index hiding, prior-evidence mutation, self-unlink hacks, provider calls, broad B2 reads, or historical evidence rewriting by default.",
+  "retrofitted_smokes": [
+    {
+      "smoke": "ps023_judge_cockpit_home_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps024_golden_demo_run_pinning_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps026_b2_evidence_explorer_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps027_genblaze_pipeline_graph_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps028_manifest_verification_panel_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps029_b2_rehydrate_comparison_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps030_failure_as_proof_timeline_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps031_export_campaign_pack_v2_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps032_operations_cockpit_flight_recorder_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps033_provider_decision_intelligence_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    },
+    {
+      "smoke": "ps034_lineage_comparison_lab_smoke.py",
+      "local_check_mode": true,
+      "passed": true
+    }
+  ],
+  "non_recursive": true,
+  "no_nested_frontend_builds": true,
+  "no_git_hiding": true,
+  "no_prior_evidence_mutation": true,
+  "no_historical_evidence_rewrite_by_default": true,
+  "no_provider_call": true,
+  "no_broad_b2_read": true,
+  "provider_network_check": {
+    "checked": [
+      {
+        "smoke": "ps023_judge_cockpit_home_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps024_golden_demo_run_pinning_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+        "network_calls": [],
+        "allowed": [
+          {
+            "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+            "call": "Request",
+            "line": 186,
+            "reason": "PS-025 explicitly gated --live path; default local/check runs do not invoke it"
+          },
+          {
+            "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+            "call": "urlopen",
+            "line": 187,
+            "reason": "PS-025 explicitly gated --live path; default local/check runs do not invoke it"
+          }
+        ]
+      },
+      {
+        "smoke": "ps026_b2_evidence_explorer_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps027_genblaze_pipeline_graph_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps028_manifest_verification_panel_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps029_b2_rehydrate_comparison_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps030_failure_as_proof_timeline_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps031_export_campaign_pack_v2_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps032_operations_cockpit_flight_recorder_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps033_provider_decision_intelligence_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      },
+      {
+        "smoke": "ps034_lineage_comparison_lab_smoke.py",
+        "network_calls": [],
+        "allowed": []
+      }
+    ],
+    "allowed_live_paths": [
+      {
+        "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+        "call": "Request",
+        "line": 186,
+        "reason": "PS-025 explicitly gated --live path; default local/check runs do not invoke it"
+      },
+      {
+        "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+        "call": "urlopen",
+        "line": 187,
+        "reason": "PS-025 explicitly gated --live path; default local/check runs do not invoke it"
+      }
+    ],
+    "ps025_live_allow_conditions_ok": true,
+    "ps025_live_allow_conditions_problems": [],
+    "violations": []
+  },
+  "broad_b2_read_check": {
+    "checked": [
+      {
+        "smoke": "ps023_judge_cockpit_home_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps024_golden_demo_run_pinning_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps026_b2_evidence_explorer_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps027_genblaze_pipeline_graph_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps028_manifest_verification_panel_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps029_b2_rehydrate_comparison_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps030_failure_as_proof_timeline_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps031_export_campaign_pack_v2_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps032_operations_cockpit_flight_recorder_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps033_provider_decision_intelligence_smoke.py",
+        "b2_calls": []
+      },
+      {
+        "smoke": "ps034_lineage_comparison_lab_smoke.py",
+        "b2_calls": []
+      }
+    ],
+    "violations": []
+  },
+  "allowed_live_paths": [
+    {
+      "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+      "call": "Request",
+      "line": 186,
+      "reason": "PS-025 explicitly gated --live path; default local/check runs do not invoke it"
+    },
+    {
+      "smoke": "ps025_public_durable_passport_unlock_smoke.py",
+      "call": "urlopen",
+      "line": 187,
+      "reason": "PS-025 explicitly gated --live path; default local/check runs do not invoke it"
+    }
+  ],
+  "smoke_lib_policy_checks": true,
+  "ps034a_required_lines_preserved": true,
+  "ps034a_smoke_still_passes": true,
+  "checked_at": "2026-07-01T05:52:10.118021+00:00",
+  "failures": []
+}

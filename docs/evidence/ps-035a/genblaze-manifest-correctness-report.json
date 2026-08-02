@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "slice_id": "ps035a",
+  "checked_at": "2026-07-01T18:37:44.448859+00:00",
+  "target_version_requested": "0.4.0",
+  "target_version_available": false,
+  "version_fallback_used": true,
+  "selected_package_path": "published-version-fallback",
+  "pinned_genblaze_versions": {
+    "genblaze-core": "0.3.4",
+    "genblaze-s3": "0.3.4",
+    "genblaze-gmicloud": "0.3.2"
+  },
+  "installed_genblaze_versions": {
+    "genblaze-core": "0.3.4",
+    "genblaze-s3": "0.3.4",
+    "genblaze-gmicloud": "0.3.2"
+  },
+  "version_claim_truthful": true,
+  "requirements_pinned": true,
+  "golden_run_id_preserved": true,
+  "golden_campaign_id_preserved": true,
+  "archive_sha256_preserved": true,
+  "manifest_uri_non_null": true,
+  "manifest_hash_non_null": true,
+  "manifest_hash_sha256_format": true,
+  "genblaze_versions_recorded": true,
+  "manifest_fixture_present": true,
+  "manifest_fixture_sha256_recomputed": true,
+  "manifest_fixture_hash_matches_golden": true,
+  "in_memory_manifest_verify": true,
+  "in_memory_manifest_verify_scope": "checked-in-local-fixture",
+  "stored_manifest_verify": true,
+  "stored_manifest_verify_scope": "checked-in-local-fixture",
+  "ps024_smoke_migrated": true,
+  "no_live_provider_call": true,
+  "no_broad_b2_read": true,
+  "truth_boundary_preserved": true,
+  "no_forbidden_overclaims": true,
+  "no_forbidden_file_changes": true,
+  "failures": []
+}

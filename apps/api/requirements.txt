@@ -1,0 +1,26 @@
+# PS-035a: Genblaze manifest correctness with exact published pins.
+# PS-041E0: selective Genblaze v0.7.0 GMICloud connector upgrade.
+# Umbrella tag object c2cb522606e80f15b544047479d56c648762e552 resolves to
+# release commit ec81e810f2643ed7ad2eb5e639d9b02470c887fd. ProofStudio adopts
+# genblaze-gmicloud==0.3.5 while retaining genblaze-core==0.3.6 and
+# genblaze-s3==0.3.5 so Pillow==12.3.0 remains the validated security baseline.
+# All packages are exact pins; the umbrella package is not installed, and no
+# individual Python package is claimed to be version 0.7.0.
+genblaze-core==0.3.6
+genblaze-s3==0.3.5
+genblaze-gmicloud==0.3.5
+# PS-041E0 security hardening: genblaze-core requires Pillow at runtime.
+# ProofStudio does not call the affected Pillow APIs directly (its import path
+# is genblaze_core.models.manifest, which does not load genblaze_core.jpeg /
+# genblaze_core.webp / PIL), but Pillow ships in the deployed runtime image.
+# Pin to the fixed 12.3.0 release so every fresh deploy resolves to a version
+# with no known advisories (PYSEC-2026-2253/2254/2255/2256/2257/3451/3452/3453).
+pillow==12.3.0
+python-dotenv
+google-genai
+# PS-012 FastAPI server mode + demo API contract.
+# These make proofstudio.api.app:app a real FastAPI instance runnable via
+# `uvicorn proofstudio.api.app:app`. httpx backs FastAPI's TestClient.
+fastapi
+uvicorn
+httpx

@@ -1,0 +1,87 @@
+[
+  {
+    "step": "required_files",
+    "ok": true,
+    "detail": {
+      "missing": [],
+      "required": [
+        "render.yaml",
+        "docs/deployment/render.md",
+        "docs/ps-018-public-deployment-target-live-url-smoke-proof.md",
+        "scripts/ps018_live_url_smoke.py"
+      ]
+    },
+    "written_at": "2026-06-26T23:44:43.433784+00:00"
+  },
+  {
+    "step": "render_config",
+    "ok": true,
+    "detail": {
+      "missing": [],
+      "forbidden": []
+    },
+    "written_at": "2026-06-26T23:44:43.434603+00:00"
+  },
+  {
+    "step": "docs",
+    "ok": true,
+    "detail": {
+      "failures": []
+    },
+    "written_at": "2026-06-26T23:44:43.437703+00:00"
+  },
+  {
+    "step": "env_template",
+    "ok": true,
+    "detail": {
+      "missing": [],
+      "run_live_default": "false"
+    },
+    "written_at": "2026-06-26T23:44:43.437912+00:00"
+  },
+  {
+    "step": "secret_scan",
+    "ok": true,
+    "detail": {
+      "bad": []
+    },
+    "written_at": "2026-06-26T23:44:43.440533+00:00"
+  },
+  {
+    "step": "historical_scripts",
+    "ok": true,
+    "detail": {
+      "modified": []
+    },
+    "written_at": "2026-06-26T23:44:43.448625+00:00"
+  },
+  {
+    "step": "repo_changes",
+    "ok": true,
+    "detail": {
+      "backend_changed_paths": [],
+      "frontend_app_changed_paths": []
+    },
+    "written_at": "2026-06-26T23:44:43.457343+00:00"
+  },
+  {
+    "step": "frontend_build",
+    "ok": true,
+    "detail": {
+      "returncode": 0,
+      "stdout_tail": "\n> proofstudio-web@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v5.4.21 building for production...\ntransforming...\n\u2713 32 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.57 kB \u2502 gzip:  0.35 kB\ndist/assets/index-B5-erOqr.css    8.20 kB \u2502 gzip:  2.27 kB\ndist/assets/index-Dy8Z2TIR.js   165.37 kB \u2502 gzip: 51.62 kB\n\u2713 built in 966ms\n",
+      "stderr_tail": ""
+    },
+    "written_at": "2026-06-26T23:44:47.643929+00:00"
+  },
+  {
+    "step": "live_url_smoke",
+    "ok": true,
+    "detail": {
+      "failures": [],
+      "api_base": "https://proofstudio.onrender.com",
+      "web_url": "https://proofstudio-web.onrender.com"
+    },
+    "written_at": "2026-06-26T23:44:50.053328+00:00"
+  }
+]

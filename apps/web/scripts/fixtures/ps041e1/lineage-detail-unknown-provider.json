@@ -1,0 +1,878 @@
+{
+  "source": "proof_api",
+  "campaign_access_scope": "campaign-sanitized-demo",
+  "lineage": {
+    "created": true,
+    "bundle": {
+      "bundle_fingerprint": "f5e85c7fd7f85c272f1205d8a276c89fd77076e583b9de9839591589a1cd8a6c",
+      "bundle_id": "bundle-sanitized-unknown-provider",
+      "campaign_id": "campaign-sanitized-demo",
+      "edge_ids": [
+        "edge_0e9257c38636dcdfeffbb5cb492a8765",
+        "edge_6579682a147511c4b35fb2cca841262f",
+        "edge_be81dd9e84b4b0e8491a6f2c502bcbeb",
+        "edge_1f3647646d3d4a678167c5dcfd96c6d5",
+        "edge_e8576c7afd0c09d13ed4967dcfb0b07d",
+        "edge_7c6a21ff064b08522a3b43cbce2857c9",
+        "edge_1bdbe0e4bd52620ea9c65815128e98d6",
+        "edge_ba89ead3fe2a4fd06762317adef95e20",
+        "edge_61cfdfa24239c8175adef783d87a4288",
+        "edge_e79d29322a43bfc72c4a2f7fbac74e63",
+        "edge_30d25dc44a62dbcee49e646b46630952",
+        "edge_5f7459eca925c2670a71fbb1e828be9f",
+        "edge_434048b7307123ed8aac5fd145cb4560",
+        "edge_3cf88b2ddaefaf29935eb9c2bed46f1d",
+        "edge_0a8da4f0d94e676e8175c32326d17369",
+        "edge_c16da38ec7a8a56b1f29188ae7de7192"
+      ],
+      "fingerprint_schema": "ps041d.fingerprint.v1",
+      "node_ids": [
+        "node_e52e7943f4b4e6dbae184a5306f7f41f",
+        "node_3181d9b1ad074ba9b3c3a0994bc45c9b",
+        "node_cee06f3045551740eb22e00c03e87715",
+        "node_f378bcb1bc2412ddfcd4d5b607d56244",
+        "node_bb33f0ded48473874173138afbd7e219",
+        "node_e3654c349cc6f3e5637cd3eff3359172",
+        "node_ad0cefa7d72818a838392d39af620491",
+        "node_c4680cc138127a3b0785f646e7484988",
+        "node_2b555604a31ec16dc2bcc81d3643067b",
+        "node_226dd1b6eee1b3f4b9d818d4573989dc",
+        "node_4a28ae1f33f2838abf94ada224d0d4b8",
+        "node_bae57f5bd750fd1875b2018e1dfb6298",
+        "node_f475bda5d054bc6102bb05acdc54e370",
+        "node_1c68881435e4541ec5be93d4f7ed9e0b",
+        "node_908e5d55c7585488ee015d71ed49082a",
+        "node_4672db39635a8767f6af54d3d6384820"
+      ],
+      "source_revision": "2e31577b7a9d5a7b0309d814f2d0282088b33fe8",
+      "source_slug": "genblaze-gen-media-multi-provider-sample",
+      "source_type": "genblaze_multi_provider_sample",
+      "state": "complete"
+    },
+    "nodes": [
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "outcome": "recorded",
+            "subject": "bundle",
+            "detail": null
+          }
+        ],
+        "content_fingerprint": "f5e85c7fd7f85c272f1205d8a276c89fd77076e583b9de9839591589a1cd8a6c",
+        "evidence_class": "recorded",
+        "kind": "import_bundle",
+        "limitations": [],
+        "metadata": {},
+        "node_id": "node_e52e7943f4b4e6dbae184a5306f7f41f",
+        "run": null,
+        "source_id": "bundle:f5e85c7fd7f85c272f1205d8a276c89fd77076e583b9de9839591589a1cd8a6c",
+        "source_role": "import_bundle"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "recorded",
+            "subject": "storyboard-sanitized-001"
+          }
+        ],
+        "content_fingerprint": "167ea3c4421fd41270242956c3897959e96e56604a18dedb1ca7c584fdbfcca0",
+        "evidence_class": "recorded",
+        "kind": "standalone_artifact",
+        "limitations": [],
+        "metadata": {
+          "title": "Sanitized contract storyboard"
+        },
+        "node_id": "node_3181d9b1ad074ba9b3c3a0994bc45c9b",
+        "run": null,
+        "source_id": "storyboard-sanitized-001",
+        "source_role": "stage_a_storyboard"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "parsed",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_hash_verified",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_output_hashes_declared",
+            "subject": "manifest_outputs"
+          }
+        ],
+        "content_fingerprint": "55319b2895370a2a12d223b7803b4e8c24a9f986fb6e1226b832b6cc09eb270e",
+        "evidence_class": "recorded",
+        "kind": "genblaze_run",
+        "limitations": [],
+        "metadata": {},
+        "node_id": "node_cee06f3045551740eb22e00c03e87715",
+        "run": {
+          "manifest_hash": "24387e919532dc6094fe9c2ac90e629d3649c4b2c64cdf1380a3e680f84010ba",
+          "manifest_schema": "1.5",
+          "parent_run_id": null,
+          "run_id": "b0-run-sanitized-001",
+          "stage": "B0",
+          "status": "completed",
+          "steps": [
+            {
+              "input_count": 0,
+              "modality": "image",
+              "model": "neutral-image-model",
+              "output_count": 1,
+              "provider": null,
+              "status": "succeeded",
+              "step_id": "b0-step-001",
+              "step_index": 0
+            }
+          ]
+        },
+        "source_id": "b0-run-sanitized-001",
+        "source_role": "stage_b0_manifest"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "parsed",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_hash_verified",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_output_hashes_declared",
+            "subject": "manifest_outputs"
+          }
+        ],
+        "content_fingerprint": "55319b2895370a2a12d223b7803b4e8c24a9f986fb6e1226b832b6cc09eb270e",
+        "evidence_class": "recorded",
+        "kind": "manifest",
+        "limitations": [],
+        "metadata": {
+          "declared_content_sha256": null,
+          "manifest_hash": "24387e919532dc6094fe9c2ac90e629d3649c4b2c64cdf1380a3e680f84010ba",
+          "manifest_schema": "1.5"
+        },
+        "node_id": "node_f378bcb1bc2412ddfcd4d5b607d56244",
+        "run": null,
+        "source_id": "manifest-b0-sanitized-001",
+        "source_role": "stage_b0_manifest"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "parsed",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_hash_verified",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_output_hashes_declared",
+            "subject": "manifest_outputs"
+          }
+        ],
+        "content_fingerprint": "700e8963edb7d9516b07b007e4c0a9dd24ddc02613bccc33529abe51d7753777",
+        "evidence_class": "recorded",
+        "kind": "genblaze_run",
+        "limitations": [],
+        "metadata": {},
+        "node_id": "node_bb33f0ded48473874173138afbd7e219",
+        "run": {
+          "manifest_hash": "11f0f780e4c71f0d0ac0733facd49a4fbe0c79a090803d2900c54b6fcc6ac4e2",
+          "manifest_schema": "1.5",
+          "parent_run_id": "b0-run-sanitized-001",
+          "run_id": "b1-run-sanitized-001",
+          "stage": "B1",
+          "status": "completed",
+          "steps": [
+            {
+              "input_count": 0,
+              "modality": "image",
+              "model": "neutral-image-model",
+              "output_count": 1,
+              "provider": "unknown-image-vendor",
+              "status": "succeeded",
+              "step_id": "b1-step-001",
+              "step_index": 0
+            },
+            {
+              "input_count": 0,
+              "modality": "image",
+              "model": "neutral-image-model-v2",
+              "output_count": 1,
+              "provider": "another-unknown-vendor",
+              "status": "succeeded",
+              "step_id": "b1-step-002",
+              "step_index": 1
+            }
+          ]
+        },
+        "source_id": "b1-run-sanitized-001",
+        "source_role": "stage_b1_manifest"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "parsed",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_hash_verified",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_output_hashes_declared",
+            "subject": "manifest_outputs"
+          }
+        ],
+        "content_fingerprint": "700e8963edb7d9516b07b007e4c0a9dd24ddc02613bccc33529abe51d7753777",
+        "evidence_class": "recorded",
+        "kind": "manifest",
+        "limitations": [],
+        "metadata": {
+          "declared_content_sha256": null,
+          "manifest_hash": "11f0f780e4c71f0d0ac0733facd49a4fbe0c79a090803d2900c54b6fcc6ac4e2",
+          "manifest_schema": "1.5"
+        },
+        "node_id": "node_e3654c349cc6f3e5637cd3eff3359172",
+        "run": null,
+        "source_id": "manifest-b1-sanitized-001",
+        "source_role": "stage_b1_manifest"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "parsed",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_hash_verified",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_output_hashes_declared",
+            "subject": "manifest_outputs"
+          }
+        ],
+        "content_fingerprint": "0a943c219bd0774ccebdbc1dd1a7fdff7ae901688657272a1b5049a8adb2983c",
+        "evidence_class": "recorded",
+        "kind": "genblaze_run",
+        "limitations": [],
+        "metadata": {},
+        "node_id": "node_ad0cefa7d72818a838392d39af620491",
+        "run": {
+          "manifest_hash": "78b0176cc7f2a10a0bfdbe8760ee9d354a36a6590a65f29e684edeb83ae150e0",
+          "manifest_schema": "1.5",
+          "parent_run_id": "b1-run-sanitized-001",
+          "run_id": "b2-run-sanitized-001",
+          "stage": "B2",
+          "status": "completed",
+          "steps": [
+            {
+              "input_count": 1,
+              "modality": "video",
+              "model": "neutral-video-model",
+              "output_count": 1,
+              "provider": "unknown-video-vendor",
+              "status": "succeeded",
+              "step_id": "b2-video-001",
+              "step_index": 0
+            },
+            {
+              "input_count": 0,
+              "modality": "audio",
+              "model": "neutral-voice-model",
+              "output_count": 1,
+              "provider": "unknown-audio-vendor",
+              "status": "succeeded",
+              "step_id": "b2-tts-001",
+              "step_index": 1
+            },
+            {
+              "input_count": 0,
+              "modality": "audio",
+              "model": "neutral-music-model",
+              "output_count": 0,
+              "provider": "unknown-music-vendor",
+              "status": "failed",
+              "step_id": "b2-music-001",
+              "step_index": 2
+            }
+          ]
+        },
+        "source_id": "b2-run-sanitized-001",
+        "source_role": "stage_b2_manifest"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "parsed",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_hash_verified",
+            "subject": "manifest"
+          },
+          {
+            "detail": null,
+            "outcome": "manifest_output_hashes_declared",
+            "subject": "manifest_outputs"
+          }
+        ],
+        "content_fingerprint": "0a943c219bd0774ccebdbc1dd1a7fdff7ae901688657272a1b5049a8adb2983c",
+        "evidence_class": "recorded",
+        "kind": "manifest",
+        "limitations": [],
+        "metadata": {
+          "declared_content_sha256": null,
+          "manifest_hash": "78b0176cc7f2a10a0bfdbe8760ee9d354a36a6590a65f29e684edeb83ae150e0",
+          "manifest_schema": "1.5"
+        },
+        "node_id": "node_c4680cc138127a3b0785f646e7484988",
+        "run": null,
+        "source_id": "manifest-b2-sanitized-001",
+        "source_role": "stage_b2_manifest"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "asset-audio-001"
+          }
+        ],
+        "content_fingerprint": "164692a836989dbdaa67afffc6f929b9ecc3962ed49cba702e75e56eb79b08b6",
+        "evidence_class": "recorded",
+        "kind": "asset",
+        "limitations": [],
+        "metadata": {
+          "media_type": "audio/wav",
+          "sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+          "size_bytes": 128
+        },
+        "node_id": "node_2b555604a31ec16dc2bcc81d3643067b",
+        "run": null,
+        "source_id": "asset-audio-001",
+        "source_role": "generated_asset"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "asset-keyframe-001"
+          }
+        ],
+        "content_fingerprint": "6b7073e4b0a105f60866c314c4c5bf00afeff6eae8fd105d52af724a52a3f70b",
+        "evidence_class": "recorded",
+        "kind": "asset",
+        "limitations": [],
+        "metadata": {
+          "media_type": "image/png",
+          "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "size_bytes": 256
+        },
+        "node_id": "node_226dd1b6eee1b3f4b9d818d4573989dc",
+        "run": null,
+        "source_id": "asset-keyframe-001",
+        "source_role": "generated_asset"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "asset-keyframe-002"
+          }
+        ],
+        "content_fingerprint": "5e8641812605eb6a8caaaaa787885a496164d43f38c2fc3a9b8baf15f0fefaf3",
+        "evidence_class": "recorded",
+        "kind": "asset",
+        "limitations": [],
+        "metadata": {
+          "media_type": "image/png",
+          "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "size_bytes": 256
+        },
+        "node_id": "node_4a28ae1f33f2838abf94ada224d0d4b8",
+        "run": null,
+        "source_id": "asset-keyframe-002",
+        "source_role": "generated_asset"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "asset-reference-001"
+          }
+        ],
+        "content_fingerprint": "18818af88a9573c369cebdeecee07dcbd7c31b46ac4bc3fe1233ef391a2fb0e2",
+        "evidence_class": "recorded",
+        "kind": "asset",
+        "limitations": [],
+        "metadata": {
+          "media_type": "image/png",
+          "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "size_bytes": 128
+        },
+        "node_id": "node_bae57f5bd750fd1875b2018e1dfb6298",
+        "run": null,
+        "source_id": "asset-reference-001",
+        "source_role": "generated_asset"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "hash_present",
+            "subject": "asset-video-001"
+          }
+        ],
+        "content_fingerprint": "4c85c142f579cf8bc97d7ec815461a192ab22d82cc523278e883e2ac085d492d",
+        "evidence_class": "recorded",
+        "kind": "asset",
+        "limitations": [],
+        "metadata": {
+          "media_type": "video/mp4",
+          "sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+          "size_bytes": 512
+        },
+        "node_id": "node_f475bda5d054bc6102bb05acdc54e370",
+        "run": null,
+        "source_id": "asset-video-001",
+        "source_role": "generated_asset"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "recorded",
+            "subject": "composition-sanitized-001"
+          }
+        ],
+        "content_fingerprint": "c66e858537f0facf36048bea1eead0a27e6266184e7d540ffb41d40fb7c23408",
+        "evidence_class": "recorded",
+        "kind": "external_composition",
+        "limitations": [],
+        "metadata": {
+          "status": "recorded",
+          "title": "External ffmpeg composition"
+        },
+        "node_id": "node_1c68881435e4541ec5be93d4f7ed9e0b",
+        "run": null,
+        "source_id": "composition-sanitized-001",
+        "source_role": "stage_c_composition"
+      },
+      {
+        "b2_reference": {
+          "backend": "b2_s3",
+          "bucket_alias": "configured-import",
+          "content_type": "video/mp4",
+          "etag": "opaque-etag-not-a-sha",
+          "manifest_hash": null,
+          "object_key": "import-root/explainers/b2-run-sanitized-001/final.mp4",
+          "sha256": "6666666666666666666666666666666666666666666666666666666666666666",
+          "size_bytes": 1024,
+          "source_prefix": "import-root",
+          "uploaded_at": null,
+          "version_id": null
+        },
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "recorded",
+            "subject": "final-sanitized-001"
+          }
+        ],
+        "content_fingerprint": "21b4a50bbf62c0961946fecdc2fcb8fb3c200c8f0fc936c6ac15acf39cfdde12",
+        "evidence_class": "recorded",
+        "kind": "asset",
+        "limitations": [],
+        "metadata": {},
+        "node_id": "node_908e5d55c7585488ee015d71ed49082a",
+        "run": null,
+        "source_id": "final-sanitized-001",
+        "source_role": "final_delivery"
+      },
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "object_missing",
+            "subject": "embedded-manifest-missing-001"
+          }
+        ],
+        "content_fingerprint": "beaa05f944fc1a1ae5fb7d01e83b9fe06c297f2fba71c85d4ac11fa4acfb35e2",
+        "evidence_class": "recorded",
+        "kind": "manifest",
+        "limitations": [
+          {
+            "code": "missing_evidence",
+            "notice": "Best-effort embedded B2 Manifest was not extracted, so its presence is not checked."
+          }
+        ],
+        "metadata": {},
+        "node_id": "node_4672db39635a8767f6af54d3d6384820",
+        "run": null,
+        "source_id": "embedded-manifest-missing-001",
+        "source_role": "embedded_manifest"
+      }
+    ],
+    "edges": [
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_0e9257c38636dcdfeffbb5cb492a8765",
+        "evidence_class": "recorded",
+        "hash_covered": false,
+        "kind": "composed_output",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "bundle final delivery record",
+        "source_node_id": "node_1c68881435e4541ec5be93d4f7ed9e0b",
+        "target_node_id": "node_908e5d55c7585488ee015d71ed49082a"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_6579682a147511c4b35fb2cca841262f",
+        "evidence_class": "recorded",
+        "hash_covered": false,
+        "kind": "composition_input",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "bundle composition record",
+        "source_node_id": "node_ad0cefa7d72818a838392d39af620491",
+        "target_node_id": "node_1c68881435e4541ec5be93d4f7ed9e0b"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_be81dd9e84b4b0e8491a6f2c502bcbeb",
+        "evidence_class": "recorded",
+        "hash_covered": false,
+        "kind": "embedded_manifest",
+        "limitations": [
+          {
+            "code": "relationship_limitation",
+            "notice": "Presence was not checked."
+          }
+        ],
+        "missing_source_id": null,
+        "source_locator": "bundle missing observation",
+        "source_node_id": "node_908e5d55c7585488ee015d71ed49082a",
+        "target_node_id": "node_4672db39635a8767f6af54d3d6384820"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_1f3647646d3d4a678167c5dcfd96c6d5",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "generated_asset",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "step:b2-tts-001:output",
+        "source_node_id": "node_ad0cefa7d72818a838392d39af620491",
+        "target_node_id": "node_2b555604a31ec16dc2bcc81d3643067b"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_e8576c7afd0c09d13ed4967dcfb0b07d",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "generated_asset",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "step:b2-video-001:output",
+        "source_node_id": "node_ad0cefa7d72818a838392d39af620491",
+        "target_node_id": "node_f475bda5d054bc6102bb05acdc54e370"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_7c6a21ff064b08522a3b43cbce2857c9",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "generated_asset",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "step:b1-step-001:output",
+        "source_node_id": "node_bb33f0ded48473874173138afbd7e219",
+        "target_node_id": "node_226dd1b6eee1b3f4b9d818d4573989dc"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_1bdbe0e4bd52620ea9c65815128e98d6",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "generated_asset",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "step:b1-step-002:output",
+        "source_node_id": "node_bb33f0ded48473874173138afbd7e219",
+        "target_node_id": "node_4a28ae1f33f2838abf94ada224d0d4b8"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_ba89ead3fe2a4fd06762317adef95e20",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "generated_asset",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "step:b0-step-001:output",
+        "source_node_id": "node_cee06f3045551740eb22e00c03e87715",
+        "target_node_id": "node_bae57f5bd750fd1875b2018e1dfb6298"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_61cfdfa24239c8175adef783d87a4288",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "manifest_for",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "manifest.run",
+        "source_node_id": "node_c4680cc138127a3b0785f646e7484988",
+        "target_node_id": "node_ad0cefa7d72818a838392d39af620491"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_e79d29322a43bfc72c4a2f7fbac74e63",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "manifest_for",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "manifest.run",
+        "source_node_id": "node_e3654c349cc6f3e5637cd3eff3359172",
+        "target_node_id": "node_bb33f0ded48473874173138afbd7e219"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_30d25dc44a62dbcee49e646b46630952",
+        "evidence_class": "recorded",
+        "hash_covered": true,
+        "kind": "manifest_for",
+        "limitations": [],
+        "missing_source_id": null,
+        "source_locator": "manifest.run",
+        "source_node_id": "node_f378bcb1bc2412ddfcd4d5b607d56244",
+        "target_node_id": "node_cee06f3045551740eb22e00c03e87715"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_5f7459eca925c2670a71fbb1e828be9f",
+        "evidence_class": "recorded",
+        "hash_covered": false,
+        "kind": "parent_run",
+        "limitations": [
+          {
+            "code": "relationship_limitation",
+            "notice": "Manifest 1.5 records parent_run_id but excludes it from the canonical hash."
+          }
+        ],
+        "missing_source_id": null,
+        "source_locator": "manifest.run.parent_run_id",
+        "source_node_id": "node_ad0cefa7d72818a838392d39af620491",
+        "target_node_id": "node_bb33f0ded48473874173138afbd7e219"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_recorded",
+        "edge_id": "edge_434048b7307123ed8aac5fd145cb4560",
+        "evidence_class": "recorded",
+        "hash_covered": false,
+        "kind": "parent_run",
+        "limitations": [
+          {
+            "code": "relationship_limitation",
+            "notice": "Manifest 1.5 records parent_run_id but excludes it from the canonical hash."
+          }
+        ],
+        "missing_source_id": null,
+        "source_locator": "manifest.run.parent_run_id",
+        "source_node_id": "node_bb33f0ded48473874173138afbd7e219",
+        "target_node_id": "node_cee06f3045551740eb22e00c03e87715"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_inferred",
+        "edge_id": "edge_3cf88b2ddaefaf29935eb9c2bed46f1d",
+        "evidence_class": "inferred",
+        "hash_covered": false,
+        "kind": "scene_member",
+        "limitations": [
+          {
+            "code": "relationship_limitation",
+            "notice": "Scene grouping is positional."
+          }
+        ],
+        "missing_source_id": null,
+        "source_locator": "sample B2 ordered-step convention",
+        "source_node_id": "node_226dd1b6eee1b3f4b9d818d4573989dc",
+        "target_node_id": "node_ad0cefa7d72818a838392d39af620491"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_inferred",
+        "edge_id": "edge_0a8da4f0d94e676e8175c32326d17369",
+        "evidence_class": "inferred",
+        "hash_covered": false,
+        "kind": "scene_member",
+        "limitations": [
+          {
+            "code": "relationship_limitation",
+            "notice": "Scene association is positional."
+          }
+        ],
+        "missing_source_id": null,
+        "source_locator": "storyboard.scenes index equals B1 step index",
+        "source_node_id": "node_3181d9b1ad074ba9b3c3a0994bc45c9b",
+        "target_node_id": "node_bb33f0ded48473874173138afbd7e219"
+      },
+      {
+        "bundle_id": "bundle-sanitized-unknown-provider",
+        "campaign_id": "campaign-sanitized-demo",
+        "check_outcome": "relationship_inferred",
+        "edge_id": "edge_c16da38ec7a8a56b1f29188ae7de7192",
+        "evidence_class": "inferred",
+        "hash_covered": false,
+        "kind": "storyboard_for",
+        "limitations": [
+          {
+            "code": "relationship_limitation",
+            "notice": "Stage A has no durable recorded link to B0."
+          }
+        ],
+        "missing_source_id": null,
+        "source_locator": "bundle.positional_scene_convention",
+        "source_node_id": "node_3181d9b1ad074ba9b3c3a0994bc45c9b",
+        "target_node_id": "node_cee06f3045551740eb22e00c03e87715"
+      }
+    ]
+  }
+}

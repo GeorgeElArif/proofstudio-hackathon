@@ -1,0 +1,53 @@
+{
+  "name": "proofstudio-auth-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "ProofStudio PS-040B server auth/runtime substrate. Not a live login or OAuth surface.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/src/server.js",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:migrate": "drizzle-kit migrate",
+    "drizzle:check": "drizzle-kit check",
+    "db:test:up": "docker compose -f docker-compose.auth-test.yml up -d",
+    "db:test:down": "docker compose -f docker-compose.auth-test.yml down -v",
+    "db:test:migrate": "npm run build --silent && node dist/scripts/smoke-migration-apply.js",
+    "test:policy": "npm run build --silent && node dist/scripts/test-policy.js",
+    "smoke:db-url-safety": "npm run build --silent && node dist/scripts/smoke-db-url-safety.js",
+    "smoke:missing-env": "npm run build --silent && node dist/scripts/smoke-missing-env.js",
+    "smoke:readiness": "npm run build --silent && node dist/scripts/smoke-readiness.js",
+    "smoke:auth-behavior": "npm run build --silent && node dist/scripts/smoke-auth-behavior.js",
+    "smoke:session-readback": "npm run build --silent && node dist/scripts/smoke-session-readback.js",
+    "smoke:body-forwarding": "npm run build --silent && node dist/scripts/smoke-body-forwarding.js",
+    "smoke:production-topology": "npm run build --silent && node dist/scripts/smoke-production-topology.js",
+    "smoke:email-oauth-readiness": "npm run build --silent && node dist/scripts/smoke-email-oauth-readiness.js",
+    "smoke:configured-auth": "npm run build --silent && node dist/scripts/smoke-configured-auth-runtime.js",
+    "smoke:auth-db": "npm run build --silent && node dist/scripts/smoke-auth-db.js",
+    "smoke:account-campaign-contract": "npm run build --silent && node dist/scripts/smoke-account-campaign-contract.js"
+    ,"smoke:account-campaign-api": "npm run build --silent && node dist/scripts/smoke-account-campaign-api.js",
+    "smoke:account-proof-access": "npm run build --silent && node dist/scripts/smoke-account-proof-access.js",
+    "smoke:imported-lineage-access": "npm run build --silent && node dist/scripts/smoke-imported-lineage-access.js",
+    "provision:judge": "npm run build --silent && node dist/scripts/provision-judge-account.js",
+    "smoke:judge-provisioning": "npm run build --silent && node dist/scripts/smoke-judge-provisioning.js",
+    "smoke:judge-access-readiness": "npm run build --silent && node dist/scripts/smoke-judge-access-readiness.js",
+    "evidence:ps041c-screenshots": "npm run build --silent && node dist/scripts/capture-ps041c-screenshots.js"
+  },
+  "dependencies": {
+    "better-auth": "^1.6.23",
+    "drizzle-orm": "^0.45.2",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/pg": "^8.15.6",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "esbuild": "^0.28.1"
+  }
+}

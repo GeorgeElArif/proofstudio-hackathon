@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "slice": "ps042c2",
+  "artifact_type": "public_api_deployment_verification_receipt",
+  "verification_scope": "credential_free_public_api_runtime",
+  "verified_on": "2026-07-29",
+  "verification_time_precision": "date",
+  "api_url": "https://proofstudio-api.onrender.com",
+  "api_commit": "37cef3def9c14b64b917ef054058c7cb6dfb1e73",
+  "health": {
+    "status": 200,
+    "service": "proofstudio-api",
+    "environment": "staging"
+  },
+  "public_passport": {
+    "status": 200,
+    "run_id": "run_89d967f9000045efa22ed4cc78cfa67f",
+    "campaign_id": "camp_bea5161faa6244079d2ee01ce445c259",
+    "archive_sha256": "a6ade0a678847bd0e7a6a258c93e815af3194da264a35e19a75e2ccae84a7141",
+    "provider_calls_during_rehydrate": 0
+  },
+  "private_run": {
+    "status": 401,
+    "code": "internal_auth_required"
+  },
+  "credentials_used": false,
+  "current_public_api_deployment_verified": true,
+  "historical_ps025_capture_state": {
+    "public_deployment_pending": true,
+    "preserved": true,
+    "meaning": "The field records the PS-025 deployment state when that historical evidence was captured. It is not the current deployment status."
+  },
+  "truth_boundary": "ProofStudio proves what the pipeline recorded. Proof does not equal truth."
+}

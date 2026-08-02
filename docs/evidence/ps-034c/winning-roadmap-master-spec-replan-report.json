@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "slice_id": "ps034c",
+  "checked_at": "2026-07-01T16:04:01.731710+00:00",
+  "files_checked": [
+    "specs/46-ps-034c-winning-roadmap-master-spec-replan.md",
+    "specs/07-master-spec-plan.md",
+    "specs/01-product-one-pager.md",
+    "specs/08-roadmap-slices.md",
+    "docs/roadmap/proofstudio-winning-implementation-roadmap-2026-06-29.md",
+    "docs/roadmap/ps-031a-hardened-product-modules-correction.md",
+    "docs/ps-034c-winning-roadmap-master-spec-replan-proof.md"
+  ],
+  "roadmap_conflict_resolved": true,
+  "ps031a_authoritative": true,
+  "ps035_review_workspace": true,
+  "ps037_disclosure_layer": true,
+  "ps035a_genblaze_manifest_correctness": true,
+  "ps035_blocked_until_ps034c_accepted": true,
+  "campaign_proof_room_present": true,
+  "multimodal_proof_present": true,
+  "assemblyai_transcript_present": true,
+  "voiceover_artifact_present": true,
+  "gemini_strategy_present": true,
+  "cloudflare_backbone_present": true,
+  "cost_caps_present": true,
+  "devpost_demo_present": true,
+  "truth_boundary_preserved": true,
+  "truth_boundary_present": true,
+  "ps034a_required_line_preserved": true,
+  "no_forbidden_overclaims": true,
+  "no_forbidden_file_changes": true,
+  "forbidden_overclaim_phrases": [
+    "production secure",
+    "C2PA authentic",
+    "human authorship proven",
+    "Object Lock enabled",
+    "tamper-proof storage",
+    "browser-side B2 byte verification"
+  ],
+  "failures": []
+}

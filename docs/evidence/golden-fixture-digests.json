@@ -1,0 +1,28 @@
+{
+  "manifest_id": "ps035b-golden-fixture-digest-manifest",
+  "slice_id": "ps035b",
+  "checked_at": "2026-07-01T00:00:00+00:00",
+  "digest_algorithm": "sha256",
+  "scope": "checked-in fixture byte equality",
+  "provenance_note": "This manifest records SHA-256 digests for the canonical checked-in golden fixtures so future slices can verify byte equality before acceptance. The digests are recomputed from the current fixture bytes by the PS-035b smoke and compared against the values recorded here. The fixture files themselves are NOT mutated by PS-035b.",
+  "fixtures": [
+    {
+      "path": "docs/evidence/demo/golden-demo-run.json",
+      "sha256": "be9ac881692e23a077bb14c8a5a79e902ad6c2adad40963af162af562d2051f2",
+      "size_bytes": 3105
+    },
+    {
+      "path": "docs/evidence/ps-035a/manifest-fixture.json",
+      "sha256": "438fabca46481a232373067eedb6d0e3a684c8ed513410dfe2047e3b4950022f",
+      "size_bytes": 1829
+    }
+  ],
+  "truth_boundary": "ProofStudio proves what the pipeline did. The golden-fixture freeze proves byte equality to recorded digests only. It is not tamper-proof, not Object Lock, not legal authenticity, and not production immutability. The cost cap is a local policy gate, not a real billing API integration and not production multi-user budget accounting. PS-035b makes no claim of B2 Object Lock, tamper-proof storage, real billing API integration, or production multi-user budget accounting.",
+  "non_claims": {
+    "not_tamper_proof": true,
+    "not_object_lock": true,
+    "not_production_immutability": true,
+    "not_real_billing_api_integration": true,
+    "not_production_multi_user_budget_accounting": true
+  }
+}

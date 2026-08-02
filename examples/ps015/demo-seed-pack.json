@@ -1,0 +1,49 @@
+{
+  "slice": "PS-015",
+  "demo_name": "ProofStudio One-Click Local Demo Seed Pack",
+  "schema_version": "ps-015.1",
+  "campaign": {
+    "name": "ProofStudio Review Room Local Demo",
+    "brief": "Demonstrate the full local Review Room demo path: create a campaign, run a safe dry-run by default, inspect attempts / assets / manifest / Provenance Passport honestly, and show the truth boundary. This seed pack holds deterministic demo inputs only; it never carries generated evidence.",
+    "audience": "Hackathon judges, reviewers, and future contributors who need a repeatable local demo without remembering fragile manual steps.",
+    "channels": ["web", "social"],
+    "tone": "Operator-grade, evidence-first, honest about limitations. No hype claims.",
+    "creative_constraints": [
+      "Default run must be a safe dry-run that calls no live provider and never touches B2.",
+      "Live mode must stay explicit and opt-in; it is never the default path.",
+      "No invented media URLs, no invented manifest references, no invented storage URLs, no invented digest values, and no invented provider or model claims.",
+      "The truth boundary must remain visible at all times.",
+      "Every piece of evidence is fetched live from the FastAPI API; nothing is hard-coded as successful."
+    ]
+  },
+  "safe_run": {
+    "run_live": false,
+    "prompt": "A safe dry-run for the local Review Room demo. Do not call any provider, do not call B2, do not fabricate media, and do not fabricate a manifest.",
+    "expected_mode": "safe-dry-run",
+    "expected_status": "dry_run_created",
+    "expected_provider_calls": 0,
+    "expected_b2_calls": 0,
+    "expected_assets": 0,
+    "expected_manifest_ready": false
+  },
+  "optional_live_run": {
+    "run_live": true,
+    "prompt": "A small explicit live proof image for the local Review Room demo.",
+    "requires_explicit_opt_in": true,
+    "opt_in_env_var": "PROOFSTUDIO_PS015_LIVE",
+    "opt_in_flag": "--live",
+    "warning": "Live mode may call external providers and B2. It is never the default and requires an explicit opt-in."
+  },
+  "reviewer_script": [
+    "1. Run the one-click helper to confirm the repo, imports, seed pack, and a safe dry-run all work.",
+    "2. Open the Review Room URL and confirm the API Status card reports the backend online.",
+    "3. Create a campaign in the Campaign Builder (or note the seeded campaign id).",
+    "4. Click 'Create Safe Dry Run' and confirm the honest no-media / no-manifest state.",
+    "5. Inspect the Attempt Timeline, Assets, Manifest, and Provenance Passport panels for the dry-run.",
+    "6. Point at the Truth Boundary footer and read the non-claims aloud.",
+    "7. Optionally enable live mode (explicit opt-in) and click 'Create Live Proof Run'; show the live evidence or an honest failure/block.",
+    "8. End on the truth boundary: ProofStudio verifies workflow evidence, it does not prove semantic truth, legal authenticity, C2PA authenticity, or human authorship."
+  ],
+  "truth_boundary": "PS-015 proves ProofStudio has a deterministic local demo seed pack and a safe one-click helper for preparing a local Review Room demo. It does not prove public deployment, production availability, authentication, production persistence, background job reliability, legal authenticity, C2PA authenticity, semantic truth, or human authorship.",
+  "created_for": "PS-015 Demo Seed Pack + One-Click Local Demo. Deterministic demo inputs only; no generated evidence."
+}

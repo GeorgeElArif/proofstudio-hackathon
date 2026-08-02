@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "campaign_status_code": 201,
+  "run_status_code": 201,
+  "passport_status_code": 200,
+  "campaign_id": "camp_363dc577f0974c46bdb4df6d0b66de74",
+  "run_id": "run_0664374a2b6745f684385e9b53532739",
+  "passport_api_status": "verified",
+  "safe_dry_run": true,
+  "provider_call": false,
+  "b2_write": false,
+  "public_passport_path": "/passport/run_0664374a2b6745f684385e9b53532739"
+}

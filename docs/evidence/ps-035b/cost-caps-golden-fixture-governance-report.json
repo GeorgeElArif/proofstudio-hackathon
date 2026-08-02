@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "slice_id": "ps035b",
+  "checked_at": "2026-07-01T19:56:07.486399+00:00",
+  "live_runs_disabled_by_default": true,
+  "run_live_default_honored": true,
+  "paid_run_requires_explicit_approval": true,
+  "cost_cap_default_zero": true,
+  "budget_mode_free_only_blocks_paid": true,
+  "b2_writes_disabled_by_default": true,
+  "b2_reads_remain_disabled_by_default": true,
+  "demo_mode_uses_fixtures": true,
+  "provider_calls_blocked_by_default": true,
+  "golden_fixture_digest_manifest_present": true,
+  "golden_demo_digest_recorded": true,
+  "ps035a_manifest_fixture_digest_recorded": true,
+  "golden_fixture_digests_match": true,
+  "ps035a_evidence_protected": true,
+  "no_provider_keys_in_frontend": true,
+  "env_files_gitignored": true,
+  "no_live_provider_call": true,
+  "no_live_b2_read": true,
+  "no_live_b2_write": true,
+  "truth_boundary_preserved": true,
+  "no_forbidden_overclaims": true,
+  "no_forbidden_file_changes": true,
+  "governance_controls": {
+    "live_runs_enabled_env": "PROOFSTUDIO_LIVE_RUNS_ENABLED",
+    "b2_writes_enabled_env": "PROOFSTUDIO_B2_WRITES_ENABLED",
+    "cost_cap_usd_env": "PROOFSTUDIO_COST_CAP_USD",
+    "fixtures_frozen_env": "PROOFSTUDIO_FIXTURES_FROZEN",
+    "paid_run_approved_env": "PROOFSTUDIO_PAID_RUN_APPROVED"
+  },
+  "golden_fixture_digests": {
+    "docs/evidence/demo/golden-demo-run.json": "be9ac881692e23a077bb14c8a5a79e902ad6c2adad40963af162af562d2051f2",
+    "docs/evidence/ps-035a/manifest-fixture.json": "438fabca46481a232373067eedb6d0e3a684c8ed513410dfe2047e3b4950022f"
+  },
+  "truth_boundary": "ProofStudio proves what the pipeline did. The golden-fixture freeze proves byte equality to recorded digests only. It is not tamper-proof, not Object Lock, not legal authenticity, and not production immutability. The cost cap is a local policy gate, not a real billing API integration and not production multi-user budget accounting.",
+  "non_claims": {
+    "not_tamper_proof": true,
+    "not_object_lock": true,
+    "not_production_immutability": true,
+    "not_real_billing_api_integration": true,
+    "not_production_multi_user_budget_accounting": true
+  },
+  "failures": []
+}

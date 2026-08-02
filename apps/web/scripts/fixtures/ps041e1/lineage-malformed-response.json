@@ -1,0 +1,77 @@
+{
+  "source": "proof_api",
+  "campaign_access_scope": "campaign-sanitized-demo",
+  "lineage": {
+    "created": true,
+    "bundle": {
+      "bundle_fingerprint": "f5e85c7fd7f85c272f1205d8a276c89fd77076e583b9de9839591589a1cd8a6c",
+      "bundle_id": "bundle-sanitized-001",
+      "campaign_id": "campaign-sanitized-demo",
+      "edge_ids": [
+        "edge_0e9257c38636dcdfeffbb5cb492a8765",
+        "edge_6579682a147511c4b35fb2cca841262f",
+        "edge_be81dd9e84b4b0e8491a6f2c502bcbeb",
+        "edge_1f3647646d3d4a678167c5dcfd96c6d5",
+        "edge_e8576c7afd0c09d13ed4967dcfb0b07d",
+        "edge_7c6a21ff064b08522a3b43cbce2857c9",
+        "edge_1bdbe0e4bd52620ea9c65815128e98d6",
+        "edge_ba89ead3fe2a4fd06762317adef95e20",
+        "edge_61cfdfa24239c8175adef783d87a4288",
+        "edge_e79d29322a43bfc72c4a2f7fbac74e63",
+        "edge_30d25dc44a62dbcee49e646b46630952",
+        "edge_5f7459eca925c2670a71fbb1e828be9f",
+        "edge_434048b7307123ed8aac5fd145cb4560",
+        "edge_3cf88b2ddaefaf29935eb9c2bed46f1d",
+        "edge_0a8da4f0d94e676e8175c32326d17369",
+        "edge_c16da38ec7a8a56b1f29188ae7de7192"
+      ],
+      "fingerprint_schema": "ps041d.fingerprint.v1",
+      "node_ids": [
+        "node_e52e7943f4b4e6dbae184a5306f7f41f",
+        "node_3181d9b1ad074ba9b3c3a0994bc45c9b",
+        "node_cee06f3045551740eb22e00c03e87715",
+        "node_f378bcb1bc2412ddfcd4d5b607d56244",
+        "node_bb33f0ded48473874173138afbd7e219",
+        "node_e3654c349cc6f3e5637cd3eff3359172",
+        "node_ad0cefa7d72818a838392d39af620491",
+        "node_c4680cc138127a3b0785f646e7484988",
+        "node_2b555604a31ec16dc2bcc81d3643067b",
+        "node_226dd1b6eee1b3f4b9d818d4573989dc",
+        "node_4a28ae1f33f2838abf94ada224d0d4b8",
+        "node_bae57f5bd750fd1875b2018e1dfb6298",
+        "node_f475bda5d054bc6102bb05acdc54e370",
+        "node_1c68881435e4541ec5be93d4f7ed9e0b",
+        "node_908e5d55c7585488ee015d71ed49082a",
+        "node_4672db39635a8767f6af54d3d6384820"
+      ],
+      "source_revision": "2e31577b7a9d5a7b0309d814f2d0282088b33fe8",
+      "source_slug": "genblaze-gen-media-multi-provider-sample",
+      "source_type": "genblaze_multi_provider_sample",
+      "state": "complete"
+    },
+    "nodes": [
+      {
+        "b2_reference": null,
+        "bundle_id": "bundle_9a1e50fea574cf0b783ae794a2f45144",
+        "campaign_id": "camp_782a3baada194d1ba0ca9dae8d6519be",
+        "checks": [
+          {
+            "detail": null,
+            "outcome": "partial_bundle",
+            "subject": "bundle"
+          }
+        ],
+        "content_fingerprint": "f5e85c7fd7f85c272f1205d8a276c89fd77076e583b9de9839591589a1cd8a6c",
+        "evidence_class": "recorded",
+        "kind": "unsupported_kind_value",
+        "limitations": [],
+        "metadata": {},
+        "node_id": "node_e52e7943f4b4e6dbae184a5306f7f41f",
+        "run": null,
+        "source_id": "bundle:f5e85c7fd7f85c272f1205d8a276c89fd77076e583b9de9839591589a1cd8a6c",
+        "source_role": "unknown_role"
+      }
+    ],
+    "edges": []
+  }
+}
