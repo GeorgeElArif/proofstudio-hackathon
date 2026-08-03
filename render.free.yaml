@@ -175,6 +175,9 @@ services:
       - path: /readyz
         name: Cache-Control
         value: no-store
+      - path: /live-proof/proofstudio-launch-image-original.png
+        name: Cache-Control
+        value: no-store, no-transform
 
 databases:
   - name: proofstudio-db
